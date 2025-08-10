@@ -1,6 +1,6 @@
 # Thinkhub — Startup Directory Web App
 
-[![Next.js](https://img.shields.io/badge/Next.js-13-blue)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-blue)](https://nextjs.org/)
 [![Sanity](https://img.shields.io/badge/Sanity-Content%20Platform-brightgreen)](https://www.sanity.io/)
 [![Sentry](https://img.shields.io/badge/Sentry-Monitoring-orange)](https://sentry.io/welcome/)
 [![NextAuth](https://img.shields.io/badge/NextAuth-Authentication-purple)](https://next-auth.js.org/)
