@@ -19,7 +19,7 @@
   * [Clone and Setup](#clone-and-setup)
   * [Environment Variables](#environment-variables)
 * [Commands](#commands)
-* [Project Concepts](#project-concepts)
+* [Project Concepts](#project-concepts-implemented)
 * [Usage](#usage)
 * [Deployment](#deployment)
 
