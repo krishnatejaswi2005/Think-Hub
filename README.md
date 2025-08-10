@@ -77,8 +77,8 @@ You can check out the live deployed application here: [https://thinkhub-startup-
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/<your-github-username>/thinkhub.git
-cd thinkhub
+git clone https://github.com/krishnatejaswi2005/Think-Hub.git
+cd Think-Hub
 ```
 
 2. **Install dependencies:**
