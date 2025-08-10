@@ -36,7 +36,6 @@ const StartupForm = () => {
 				toast({
 					title: "Success",
 					description: "Your startup pitch has been created successfully",
-					variant: "destructive",
 				});
 				router.push(`/startup/${result._id}`);
 			}
@@ -50,7 +49,6 @@ const StartupForm = () => {
 				toast({
 					title: "Error",
 					description: "Please check your inputs and try again",
-					variant: "destructive",
 				});
 
 				return {
@@ -62,7 +60,6 @@ const StartupForm = () => {
 			toast({
 				title: "Error",
 				description: "An unexpected error has occurred",
-				variant: "destructive",
 			});
 			return {
 				...prevState,
