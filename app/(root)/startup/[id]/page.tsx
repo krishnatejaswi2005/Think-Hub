@@ -4,8 +4,7 @@ import { client } from "@/sanity/lib/client";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import markdownit from "markdown-it";
-
+const MarkdownIt = require("markdown-it");
 import React, { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import View from "@/components/View";
@@ -13,13 +12,14 @@ import StartupCard, { startupCardType } from "@/components/StartupCard";
 
 export const experimental_ppr = true;
 
-const md = markdownit();
+const md = new MarkdownIt();
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
 	const id = (await params).id;
-
 	const [post, { select: editorPosts }] = await Promise.all([
 		client.fetch(STARTUP_BY_ID_QUERY, { id }),
-		client.fetch(PLAYLIST_BY_SLUG_QUERY, { slug: "editor-picks" }),
+		client.fetch(PLAYLIST_BY_SLUG_QUERY, {
+			slug: "editors-picks",
+		}),
 	]);
 
 	if (!post) return notFound();
